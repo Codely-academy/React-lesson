@@ -1,8 +1,6 @@
 import './App.css';
-import Box from './components/Box';
-import Friend from './components/Friend'
+import Friend from './components/Friend';
 const App = () => {
-  const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
   console.log("HELLOO APP.JS");
   const friends = [
     {
