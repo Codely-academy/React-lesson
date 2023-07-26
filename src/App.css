@@ -1,19 +1,39 @@
-.box{
+.box {
   width: 100px;
   height: 100px;
-  border: 1px solid gold
+  border: 1px solid gold;
 }
 .container {
   display: flex;
   flex-direction: column;
 }
 
-.friend-container{
+.friend-container {
   border: 1px solid gray;
   background-color: aqua;
   margin-bottom: 10px;
 }
 
-.friend-container img{
-  float:left
+.friend-container img {
+  float: left;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+}
+.todo-container h1 {
+  color: gray;
+  font-size: 32px;
+}
+.task-container {
+  display: flex;
+  justify-content: space-around;
+  width: 80vw;
+  border-bottom: 1px solid gray;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }

@@ -1,34 +1,33 @@
+import { useState } from 'react';
 import './App.css';
-import Friend from './components/Friend';
+import TodoInput from './components/TodoInput'
+import TodoTask from './components/TodoTask'
 const App = () => {
-  console.log("HELLOO APP.JS");
-  const friends = [
-    {
-      name: 'Баясаа',
-      gender: 'Эр',
-      img: 'https://upload.wikimedia.org/wikipedia/commons/3/3c/IMG_logo_%282017%29.svg'
-    },
-    {
-      name: 'Дэлгэрцэцэг',
-      gender: 'Эм',
-      img: 'https://upload.wikimedia.org/wikipedia/commons/3/3c/IMG_logo_%282017%29.svg'
-    },
-    {
-      name: 'Шижир',
-      gender: 'Эр',
-      img: 'https://upload.wikimedia.org/wikipedia/commons/3/3c/IMG_logo_%282017%29.svg'
-    },
-  ]
+  // 1. Props : Component гаднаас орж ирж байгаа утга
+  let tasks = []
+  const [taskList, setTaskList] = useState(tasks)
+  // 2. State: Компонентийн төлөв
+  const [title, setTitle] = useState("TODOS")
+
+  const onPressAdd = (text) => {
+    console.log("onPressAdd clicked", text);
+    setTaskList([...taskList, { text }])
+  }
+  const onPressDelete = (text) => {
+    console.log("Delete clicked", text);
+    const newList = taskList.filter(task => task.text !== text)
+    console.log("newlist", newList)
+    setTaskList([...newList])
+  }
   return (
-    <div>
-      <h1>HELLOO</h1>
-      <div className='container'>
-        {
-          friends.map((friend) => {
-            return <Friend data={friend} />
-          })
-        }
-      </div>
+    <div className='todo-container'>
+      <h1>{title}</h1>
+      <TodoInput onPressAdd={onPressAdd} />
+      {
+        taskList.map((task) => {
+          return <TodoTask onPressDelete={onPressDelete} data={task} too1={200} />
+        })
+      }
     </div>
   );
 }
