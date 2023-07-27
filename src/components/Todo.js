@@ -9,6 +9,7 @@ export default function Todo() {
     // 2. State: Компонентийн төлөв
     const [title, setTitle] = useState("TODOS")
 
+
     const onPressAdd = (text) => {
         console.log("onPressAdd clicked", text);
         setTaskList([...taskList, { text }])
