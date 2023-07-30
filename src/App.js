@@ -1,9 +1,8 @@
 import './App.css';
-import ToggleButton from './components/Toggle';
+import Counter from './components/Counter';
 const App = () => {
   return <div>
-    <ToggleButton />
-
+    <Counter />
   </div>
 }
 
