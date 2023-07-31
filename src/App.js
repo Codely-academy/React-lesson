@@ -1,10 +1,11 @@
 import './App.css';
-import ToggleButton from './components/Toggle';
+import TsagAgaar from './components/TsagAgaar';
 const App = () => {
   return <div>
-    <ToggleButton />
-
+    <TsagAgaar />
   </div>
+
+
 }
 
 export default App;

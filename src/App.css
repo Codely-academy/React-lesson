@@ -52,3 +52,52 @@
   border-radius: 40%;
   background-color: gold;
 }
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.counter-container .buttons {
+  display: flex;
+}
+.counter-container button {
+  padding: 10px 20px;
+  margin: 0px 10px;
+  color: white;
+}
+.btn-green {
+  background-color: green;
+}
+.btn-red {
+  background-color: red;
+}
+.btn-gray {
+  background-color: gray;
+}
+.tsag-agaar-container {
+  border: 1px solid lightgray;
+  padding: 16px;
+}
+.tsag-agaar-container button {
+  font-size: 24px;
+  padding: 8px;
+}
+.tsag-agaar {
+  border: 1px solid lightgray;
+  padding: 16px;
+  margin-right: 16px;
+}
+.tsag-agaar p {
+  background-color: lightblue;
+  color: white;
+  font-size: 32px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+.city-selected {
+  background-color: lightblue;
+  color: white;
+}
