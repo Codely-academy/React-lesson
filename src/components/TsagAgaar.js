@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { tsagAgaarData } from '../data/tsag-agaar-aimag-sum';
 import Day from './Day';
 const TsagAgaar = () => {
@@ -14,8 +14,9 @@ const TsagAgaar = () => {
         console.log("onDarkhan")
         setCity(ubCity)
     }
-
-
+    const onClick = () => {
+        console.log("clicked")
+    }
     return (
         <div className='tsag-agaar-container'>
             {/* shift + alt + Down Arrow */}
@@ -24,7 +25,16 @@ const TsagAgaar = () => {
             <div className='flex-container'>
                 {city.data.weather.map(
                     (obj) => {
-                        return <Day data={obj} />
+                        return <Day myFunction={onClick} data={obj} >
+                            <div>
+                                <h1>MY CONTENT</h1>
+                                <button >My button</button>
+                                <button >My button</button>
+                                <button >My button</button>
+                                <button >My button</button>
+                            </div>
+                        </Day>
+
                     }
                 )}
             </div>

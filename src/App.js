@@ -1,8 +1,9 @@
 import './App.css';
-import TsagAgaar from './components/TsagAgaar';
+import ListFilter from './components/ListFilter';
 const App = () => {
+
   return <div>
-    <TsagAgaar />
+    <ListFilter />
   </div>
 
 

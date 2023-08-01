@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 
-const ToggleButton = () => {
-    const [text, setText] = useState("OFF");
+const ToggleButton = (props) => {
+    const { text, setText } = props
+
     // text OFF => ON
     // text ON => OFF
     const onClick = () => {
