@@ -2,6 +2,11 @@ import React, { useState } from 'react'
 import List from './List';
 import { users } from '../data/users';
 const ListFilter = () => {
+    // 1. UI 
+    // 2. Input onChange => Hadgalan
+    // 3. Hadgalsan utgaara filter
+    // 4. Filter hiisnee delgetsend haruulna
+
     const [text, setText] = useState('');
     const onChange = (e) => {
         const text = e.target.value;
