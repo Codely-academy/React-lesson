@@ -1,9 +1,8 @@
 import './App.css';
-import ListFilter from './components/ListFilter';
+import TicTac from './components/TicTac';
 const App = () => {
-
   return <div>
-    <ListFilter />
+    <TicTac />
   </div>
 
 
