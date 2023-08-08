@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import List from './List';
-import { users } from '../data/users';
 const ListFilter = () => {
     // 1. UI 
     // 2. Input onChange => Hadgalan
@@ -12,15 +11,15 @@ const ListFilter = () => {
         const text = e.target.value;
         setText(text)
     }
-    // const fruits = ['Banana', 'Apple', 'Orange', 'Mango', 'Pineapple', 'Watermelon']
+    const fruits = ['Banana', 'Apple', 'Orange', 'Mango', 'Pineapple', 'Watermelon']
 
     // App 
     // [Apple, Pineapple]
-    const filteredData = users.filter((user) => {
-        return user.email.includes(text)
+    const filteredData = fruits.filter((el) => {
+        return el.toLowerCase().includes(text)
     })
 
-    const listData = filteredData ? filteredData : users
+    const listData = filteredData ? filteredData : fruits
     return (
         <div>
             <input value={text} onChange={onChange} name='search' placeholder='search' />

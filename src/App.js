@@ -1,8 +1,11 @@
 import './App.css';
-import TicTac from './components/TicTac';
+import ListFilter from './components/ListFilter';
+import Weather from './components/Weather';
+
 const App = () => {
   return <div>
-    <TicTac />
+    {/* <Weather /> */}
+    <ListFilter />
   </div>
 
 

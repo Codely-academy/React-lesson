@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+// 25 => ??
+// 56 => ??
 const Counter = () => {
     const [number, setNumber] = useState(0);
     const onIncrement = () => {

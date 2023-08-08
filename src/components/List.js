@@ -8,7 +8,7 @@ const List = (props) => {
             {
                 data.map(
                     (obj) => {
-                        return <p>{obj.email}</p>
+                        return <p>{obj}</p>
                     }
                 )
             }
