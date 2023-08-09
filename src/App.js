@@ -1,11 +1,9 @@
 import './App.css';
-import ListFilter from './components/ListFilter';
-import Weather from './components/Weather';
+import Hangman from './components/Hangman';
 
 const App = () => {
   return <div>
-    {/* <Weather /> */}
-    <ListFilter />
+    <Hangman />
   </div>
 
 
