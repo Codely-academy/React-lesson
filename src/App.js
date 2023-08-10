@@ -1,9 +1,9 @@
 import './App.css';
-import Hangman from './components/Hangman';
+import CallBackend from './components/CallBackend';
 
 const App = () => {
   return <div>
-    <Hangman />
+    <CallBackend />
   </div>
 
 
