@@ -30,7 +30,7 @@ export default function CallBackend() {
     }
     return (
         <div>
-            {/* {data.map(o => <p>{o.title}</p>)} */}
+
             <button onClick={onClick}>Call Backend</button>
             <Row>
                 {
