@@ -1,19 +1,122 @@
-.box{
+.box {
   width: 100px;
   height: 100px;
-  border: 1px solid gold
+  border: 1px solid gold;
 }
 .container {
   display: flex;
   flex-direction: column;
 }
 
-.friend-container{
+.friend-container {
   border: 1px solid gray;
   background-color: aqua;
   margin-bottom: 10px;
 }
 
-.friend-container img{
-  float:left
+.friend-container img {
+  float: left;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+}
+.todo-container h1 {
+  color: gray;
+  font-size: 32px;
+}
+.task-container {
+  display: flex;
+  justify-content: space-around;
+  width: 80vw;
+  border-bottom: 1px solid gray;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.toggle-off {
+  padding: 10px 20px;
+  border-radius: 40%;
+  background-color: white;
+}
+.toggle-on {
+  padding: 10px 20px;
+  border-radius: 40%;
+  background-color: gold;
+}
+.toggle-btn {
+  padding: 10px 30px;
+  border-radius: 40%;
+  background-color: gold;
+}
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.counter-container .buttons {
+  display: flex;
+}
+.counter-container button {
+  padding: 10px 20px;
+  margin: 0px 10px;
+  color: white;
+}
+.btn-green {
+  background-color: green;
+}
+.btn-red {
+  background-color: red;
+}
+.btn-gray {
+  background-color: gray;
+}
+.tsag-agaar-container {
+  border: 1px solid lightgray;
+  padding: 16px;
+}
+.tsag-agaar-container button {
+  font-size: 24px;
+  padding: 8px;
+}
+.tsag-agaar {
+  border: 1px solid lightgray;
+  padding: 16px;
+  margin-right: 16px;
+}
+.tsag-agaar p {
+  background-color: lightblue;
+  color: white;
+  font-size: 32px;
+}
+
+.flex-container {
+  display: flex;
+}
+.city-selected {
+  background-color: lightblue;
+  color: white;
+}
+.tic-tac-button {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 10px;
+  font-size: 48px;
+}
+.tic-tac-container {
+  display: flex;
+  flex-wrap: wrap;
+  border: 10px solid pink;
+  width: 510px;
+  height: 510px;
+}
+
+.tsag-agaar-container {
+  display: flex;
+  margin-top: 10px;
 }
