@@ -2,7 +2,9 @@
   "name": "codespaces-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://codely-academy.github.io/React-lesson",
   "dependencies": {
+    
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
